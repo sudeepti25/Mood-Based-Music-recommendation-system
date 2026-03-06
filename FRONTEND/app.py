@@ -10,8 +10,12 @@ import random
 # -----------------------------
 # CONFIG
 # -----------------------------
-MODEL_PATH = r"C:\Users\sudee\OneDrive\Documents\GitHub\Mood-Based-Music-recommendation-system\MODELS\cnn_model.h5"
-DATA_PATH = r"C:\Users\sudee\OneDrive\Documents\GitHub\Mood-Based-Music-recommendation-system\dataset_with_moods_full.csv"
+import os
+from tensorflow.keras.models import load_model
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "MODELS", "cnn_model.h5")
+DATA_PATH = os.path.join(BASE_DIR, "dataset_with_moods_full.csv")
 TARGET_SIZE = (48, 48)  # FER2013 image size
 FRAME_SKIP = 3
 
