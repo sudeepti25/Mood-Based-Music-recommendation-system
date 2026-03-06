@@ -10,8 +10,8 @@ import random
 # -----------------------------
 # CONFIG
 # -----------------------------
-MODEL_PATH = r"MODELS\cnn_model.h5"
-DATA_PATH = r"dataset_with_moods_full.csv"
+MODEL_PATH = r"C:\Users\sudee\OneDrive\Documents\GitHub\Mood-Based-Music-recommendation-system\MODELS\cnn_model.h5"
+DATA_PATH = r"C:\Users\sudee\OneDrive\Documents\GitHub\Mood-Based-Music-recommendation-system\dataset_with_moods_full.csv"
 TARGET_SIZE = (48, 48)  # FER2013 image size
 FRAME_SKIP = 3
 
